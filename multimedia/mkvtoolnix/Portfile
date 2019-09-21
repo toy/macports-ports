@@ -6,11 +6,11 @@ PortGroup           github 1.0
 PortGroup           compiler_blacklist_versions 1.0
 PortGroup           muniversal 1.0
 
-github.setup        mbunkus mkvtoolnix 30.1.0 release-
-revision            1
-checksums           rmd160  7e60883259bdc72e1d39e171d92d9d82878999f1 \
-                    sha256  4628f40d62d359edb1441c52381b1f3a61aa227279133d7e01257f91e0d92591 \
-                    size    7274296
+github.setup        mbunkus mkvtoolnix 37.0.0 release-
+revision            0
+checksums           rmd160  4503a2e291afca88209e55b4828c5cc34abf205e \
+                    sha256  3d421af5307243591b726427a2c1a9c3cb496e8a5003362b5069558fc2488d64 \
+                    size    7307984
 
 categories          multimedia
 platforms           darwin
@@ -100,7 +100,7 @@ test.target         tests:unit
 variant qtgui description {Build with the qt5 GUI} {
     PortGroup       app 1.0
     PortGroup       qt5 1.0
-    
+
     app.name        MKVToolNix
     app.executable  mkvtoolnix-gui
     app.icon        ${worksrcpath}/share/icons/256x256/mkvtoolnix-gui.png
